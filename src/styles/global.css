@@ -1,0 +1,27 @@
+:root {
+    /* Light mode defaults */
+    --background: #f2f4f8;
+    --surface: #f9fafb;
+    --text: #374151;
+    --primary: #3b82f6;
+    --secondary: #cbd5e1;
+    --accent: #34d399;
+  }
+  
+  /* Dark mode overrides */
+  [data-theme='dark'] {
+    --background: #1e293b;
+    --surface: #2b3a51;
+    --text: #f3f4f6;
+    --primary: #0a2540;
+    /* --secondary: #adb5bd; */
+    --accent: #0ea5e9;
+  }
+  
+  /* Apply variables to the app */
+  body {
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    /* font-family: Arial, sans-serif; */
+  }
