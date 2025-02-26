@@ -3,8 +3,9 @@
     --background: #f2f4f8;
     --surface: #f9fafb;
     --text: #374151;
+    --text-primary: #f9fafb;
     --primary: #3b82f6;
-    --secondary: #cbd5e1;
+    --secondary: #aeb6c1;
     --accent: #34d399;
   }
   
@@ -13,8 +14,8 @@
     --background: #1e293b;
     --surface: #2b3a51;
     --text: #f3f4f6;
-    --primary: #0a2540;
-    /* --secondary: #adb5bd; */
+    --primary: #6366f1;
+    --secondary: #adb5bd;
     --accent: #0ea5e9;
   }
   
