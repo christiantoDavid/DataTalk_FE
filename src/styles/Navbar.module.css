@@ -15,17 +15,17 @@ a {
     transition: background-color 0.3s ease;
   }
   
+  .flexCenterContainer {
+    display: flex;
+    align-items: center;
+  }
+  
   .logoContainer {
     display: flex;
     align-items: center;
     padding: 0 0 0 2vw;
   }
   
-  .logoInnerContainer {
-    display: flex;
-    align-items: center;
-  }
-
   .logo {
     height: 40px;
     width: auto;
@@ -48,25 +48,43 @@ a {
     opacity: 0.8;
   }
 
-  .themeButton {
-    width: 40px;
+  .buttonContainer {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .buttonContainer * {
+    margin-left: 10px;
+  }
+
+  button.navbarButton {
     height: 40px;
     background-color: var(--surface);
     color: var(--text);
     border: none;
-    box-shadow: 0px 0px 3px 1px #80808080;
-    border-radius: 10px;
-    font-size: 20px;
+    box-shadow: 0px 0px 3px 1px #80808040;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  button.signUpButton {
+    background-color: var(--primary);
+    color: var(--text-primary);
+    margin-right: 15px;
+  }
+  
+  .themeButton {
+    width: 40px;
+    border-radius: 10px;
+    font-size: 20px;
     transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.2s ease;
   }
   
   .themeButton:hover {
     transform: scale(1.05);
-    /* background-color: var(--secondary); */
     box-shadow: 0 0 10px #80808080;
   }
   
@@ -77,7 +95,7 @@ a {
   /* Responsive tweak for smaller screens */
   @media (max-width: 600px) {
     .navbar {
-      padding: 10px 15px;
+      padding: 12px 12px;
     }
     .logo {
       height: 30px;
@@ -86,5 +104,11 @@ a {
       width: 35px;
       height: 35px;
       font-size: 18px;
+    }
+    button.signInButton {
+      display: none;
+    }
+    button.signUpButton {
+      margin-right: 5px;
     }
   }
