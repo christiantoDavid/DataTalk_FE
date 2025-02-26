@@ -1,0 +1,81 @@
+.sidebar {
+    width: 200px;
+    transition: width 0.3s ease;
+    background-color: #f9fafb;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .sidebar.collapsed {
+    width: 80px;
+  }
+  
+  .logoContainer {
+    margin-bottom: 20px;
+  }
+  
+  .logoInnerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Left group (logo) styling */
+  .leftGroup {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Right group (search icon + toggle button) styling */
+  .rightGroup {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* spacing between search and toggle */
+  }
+  
+  .logo {
+    width: 25px;
+    height: 25px;
+    transition: width 0.3s ease, height 0.3s ease;
+  }
+  
+  /* Smaller barchart icon when sidebar is collapsed */
+  .logoCollapsed {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .searchButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .searchIcon {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .toggleButton {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .toggleButton:hover {
+    background-color: #f2f4f8;
+  }
+  
